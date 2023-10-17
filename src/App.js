@@ -2,13 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
 import Button from './components/Button';
+import Input from './components/input';
 import TO_DOS from "./mocks/todos";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,7 +20,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
         
         <List></List>
         <Button title={'list'}></Button>

@@ -1,7 +1,7 @@
 
 function Button({title, onButtonClick}){
+    
     function handleClick(event){
-        console.log("event", event);
         onButtonClick(title);
     }
 

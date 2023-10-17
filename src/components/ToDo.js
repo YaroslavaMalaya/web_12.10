@@ -1,8 +1,8 @@
 import Button from "./Button";
 
-function ToDo({label, date}){
+function ToDo({label, date, onToDoRemoveClick}){
     function clickReceived(event){
-        console.log('parent', event)
+        onToDoRemoveClick(label);
     }
 
     return (
