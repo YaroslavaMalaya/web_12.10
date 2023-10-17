@@ -1,10 +1,12 @@
 import Item from "./Item";
+import TO_DOS from "../mocks/todos";
+import ToDo from "./ToDo";
 
-function List({list}){
-    let listItems = ['one', 'two', 'three'];
+export function List(){
+    let listItems = TO_DOS;
     return(
         <div>
-            {list.map(i=> <Item key={i} itemText>{i}</Item>)}
+            {listItems.map(i=> <ToDo key={i} label={i.label} date={i.date}></ToDo>)}
         </div>
     )
 }

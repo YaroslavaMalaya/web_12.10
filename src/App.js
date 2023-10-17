@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
+import Button from './components/Button';
+import TO_DOS from "./mocks/todos";
 
 function App() {
   return (
@@ -19,8 +21,8 @@ function App() {
           Learn React
         </a>
         
-        <button>Submit</button>
-        <List list={['er', 'errer', 'weeee']}></List>
+        <List></List>
+        <Button title={'list'}></Button>
         <button type="button" className="btn btn-outline-primary btn-info">Toggle button from bootstrap</button>
       </header>
     </div>
